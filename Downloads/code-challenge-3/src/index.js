@@ -1,6 +1,6 @@
 // Your code here
 const baseUrl = `http://localhost:3000/films`
-
+let idBuyticket = document.getElementById("buy-ticket")
 fetch(baseUrl, {
 method: 'GET',
 headers: {
