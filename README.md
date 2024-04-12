@@ -38,7 +38,7 @@ https://github.com/sumnicky99/Phase-1-independent-project/edit/main/README.md
 
 ```
 # Live Link
-https://github.com/sumnicky99/Phase-1-independent-project/edit/main/README.md
+ https://sumnicky99.github.io/Phase-1-independent-project/
 ## Technologies used
 Node Runtime Environment
 Github
