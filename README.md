@@ -1,5 +1,5 @@
 # Phase-1-independent-project
-#
+#Details on motocyles ie types
 #### Date, 2024/04/09
 
 #### By *Sumeya Mohamed*
