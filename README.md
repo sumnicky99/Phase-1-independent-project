@@ -5,7 +5,7 @@
 #### By *Sumeya Mohamed*
 
 ## Description
-Its a project expalinng about motocycles ie where it can be rode and how it looks like
+Its a project expalinng about motocycles ie how it looks like .several types of motocyles .
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub
