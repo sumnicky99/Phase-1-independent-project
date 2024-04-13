@@ -7,7 +7,6 @@ fetch("http://api.citybik.es/v2/networks")
 if (!response.ok) {
 throw new Error("Failed to fetch data from the API");
 }
-return response.json(fetch);
 })
 .then(data => {
 // Process and display data
