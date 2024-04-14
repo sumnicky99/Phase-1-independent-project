@@ -31,17 +31,26 @@ resultDiv.appendChild(networkDiv);
 }
 console.log(displayData)
 console.log(btn)
-const apiUrl = "http://api.citybik.es/v2/network"
-    fetch(apiUrl) 
-    .then(response => response.json()
-    .then (data => {
-        const item= data ;
-        const specificItems = items.find (item => item.id==="bbbike");
-        if (specificItems){
-            console.log("found the item:", specificItems);}
-        else{
-            console.log("item not found");}})
-    . catch(error => {
-        console.error("error fetched:" , error)
-        })
-    );
+const apiUrl = "http://api.citybik.es/v2/networks";
+fetch(apiUrl)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Failed to fetch data from the API");
+        }
+        return response.json();
+    })
+    .then(data => {
+        const specificItem = data.networks.find(item => 
+            item.id === "bbbike" && 
+            item.name === "BBBike" && 
+            item.href === "/v2/networks/bbbike"
+        );
+        if (specificItem) {
+            console.log("found the item:", specificItem);
+        } else {
+            console.log("item not found");
+        }
+    })
+    .catch(error => {
+        console.error("error fetched:", error);
+    });
