@@ -19,24 +19,20 @@ console.error(error);
 });
 });
 function displayData(data) {
-const resultDiv = document.getElementById("search-result");
-resultDiv.innerHTML = ""; // Clear previous results
+    const resultDiv = document.getElementById("search-result");
+    resultDiv.innerHTML = ""; // Clear previous results
 
 // Iterate over the networks and display information
-data.networks.forEach(network => {
-const networkDiv = document.createElement("div");
-networkDiv.textContent = network.name;
-resultDiv.appendChild(networkDiv);
+    data.networks.forEach(network => {
+    const networkDiv = document.createElement("div");
+        networkDiv.textContent = network.name;
+        resultDiv.appendChild(networkDiv);
 });
 }
 console.log(displayData)
 console.log(btn)
 const apiUrl = "http://api.citybik.es/v2/networks";
-fetch(apiUrl) , {
-    method: 'GET',
-    body: data
-}
-e.preventDefault()
+fetch(apiUrl)
     .then(response => {
         if (!response.ok) {
             throw new Error("Failed to fetch data from the API");
