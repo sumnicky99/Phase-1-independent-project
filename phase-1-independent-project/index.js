@@ -46,7 +46,6 @@ function buttonMouseOut(){
 })}
 buttonMouseOut()
     
-
 const apiUrl = "http://api.citybik.es/v2/networks";
 fetch(apiUrl)
     .then(response => {
