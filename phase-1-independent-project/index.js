@@ -20,7 +20,7 @@ console.error(error);
 });
 function displayData(data) {
 const resultDiv = document.getElementById("search-result");
-//resultDiv.innerHTML = ""; // Clear previous results
+resultDiv.innerHTML = ""; // Clear previous results
 
 // Iterate over the networks and display information
 data.networks.forEach(network => {
