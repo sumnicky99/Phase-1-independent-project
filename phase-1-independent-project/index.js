@@ -1,7 +1,7 @@
 let btn = document.getElementById("search").addEventListener("click", function(e) 
 {
-e.preventDefault()
-fetch("http://api.citybik.es/v2/networks")
+    e.preventDefault()
+        fetch("http://api.citybik.es/v2/networks") 
     .then(response => 
 {
 if (!response.ok) {
@@ -32,7 +32,11 @@ resultDiv.appendChild(networkDiv);
 console.log(displayData)
 console.log(btn)
 const apiUrl = "http://api.citybik.es/v2/networks";
-fetch(apiUrl)
+fetch(apiUrl) , {
+    method: 'GET',
+    body: data
+}
+e.preventDefault()
     .then(response => {
         if (!response.ok) {
             throw new Error("Failed to fetch data from the API");
