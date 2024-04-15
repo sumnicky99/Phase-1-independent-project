@@ -58,7 +58,7 @@ fetch(apiUrl)
             item.id === "bbbike" && 
             item.name === "BBBike" && 
             item.href === "/v2/networks/bbbike"
-    );
+);
         if (specificItem) {
             console.log("found the item:", specificItem);
         } else {
