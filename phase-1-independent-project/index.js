@@ -45,7 +45,7 @@ function buttonMouseOut(){
         search.style.opacity = 0.8
 })}
 buttonMouseOut()
-  
+
 const apiUrl = "http://api.citybik.es/v2/networks";
 fetch(apiUrl)
     .then(response => {
