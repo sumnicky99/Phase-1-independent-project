@@ -2,9 +2,9 @@ let btn = document.getElementById("search").addEventListener("click", function(e
 {
     e.preventDefault()
         fetch("http://api.citybik.es/v2/networks") 
-    .then(response => 
+            .then(response => 
 {
-if (!response.ok) {
+                if (!response.ok) {
 throw new Error("Failed to fetch data from the API");
 }
 return response.json(fetch);
