@@ -39,6 +39,10 @@ function buttonMouseOver(){let search = document.getElementById("search")
 })}
 buttonMouseOver()
 function buttonMouseOut(){
+    let search= document.getElementById("search")
+    search.addEventListener("mouseout",()=>{
+        search.style.background = "pink"; 
+        search.style.opacity = 0.8
 })}
 buttonMouseOut()
     
