@@ -33,9 +33,13 @@ console.log(displayData)
 console.log(btn)
 
 function buttonMouseOver(){let search = document.getElementById("search")
-search.addEventListener("mouseover",()=>{
-  
-    
+    search.addEventListener("mouseover",()=>{
+        search.style.background = "maroon";
+        search.style.opacity = 0.8
+})}
+buttonMouseOver()
+
+
 const apiUrl = "http://api.citybik.es/v2/networks";
 fetch(apiUrl)
     .then(response => {
