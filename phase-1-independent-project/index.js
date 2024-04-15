@@ -5,9 +5,9 @@ let btn = document.getElementById("search").addEventListener("click", function(e
             .then(response => 
 {
                 if (!response.ok) {
-throw new Error("Failed to fetch data from the API");
+                    throw new Error("Failed to fetch data from the API");
 }
-return response.json(fetch);
+                return response.json(fetch);
 })
 .then(data => {
 // Process and display data
