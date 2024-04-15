@@ -9,12 +9,12 @@ let btn = document.getElementById("search").addEventListener("click", function(e
 }
                 return response.json(fetch);
 })
-.then(data => {
+            .then(data => {
 // Process and display data
-console.log(data)
-displayData(data);
+                console.log(data)
+                displayData(data);
 })
-.catch(error => {
+            .catch(error => {
 console.error(error);
 });
 });
