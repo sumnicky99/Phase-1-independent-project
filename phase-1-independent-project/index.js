@@ -38,7 +38,10 @@ function buttonMouseOver(){let search = document.getElementById("search")
         search.style.opacity = 0.8
 })}
 buttonMouseOver()
-
+function buttonMouseOut(){
+})}
+buttonMouseOut()
+    
 
 const apiUrl = "http://api.citybik.es/v2/networks";
 fetch(apiUrl)
